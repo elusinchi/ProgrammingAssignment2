@@ -17,6 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
     x <<- y
     s <<- NULL
     # Note the use of <<- to assign x and s in another environment than their current environment
+    # Also, note that if x is being changed, any cached solved matrix is reset to NULL
   }
   get <- function() x
   
